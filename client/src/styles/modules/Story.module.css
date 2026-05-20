@@ -15,22 +15,17 @@
 .tab,
 .activeTab {
   padding: 0.6rem 1.5rem;
-  font-size: 0.85rem;
-  letter-spacing: 0.08em;
+  font-size: 0.8rem;
+  letter-spacing: 0.15em;
   text-transform: uppercase;
-  transition: color 0.2s, border-color 0.2s;
+  color: var(--color-muted);
   border-bottom: 2px solid transparent;
   margin-bottom: -1px;
-  color: var(--color-muted);
-  background: none;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  cursor: pointer;
+  transition: all 0.2s;
 }
 
 .activeTab {
-  color: var(--color-text);
+  color: var(--color-accent);
   border-bottom-color: var(--color-accent);
 }
 
@@ -41,12 +36,13 @@
 .content h2 {
   font-size: 1.5rem;
   font-weight: 300;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.15em;
   text-transform: uppercase;
   margin-bottom: 1.5rem;
 }
 
 .content p {
-  color: var(--color-muted);
+  font-size: 1rem;
   line-height: 1.8;
+  color: var(--color-muted);
 }
