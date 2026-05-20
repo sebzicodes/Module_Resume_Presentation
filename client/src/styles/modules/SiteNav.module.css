@@ -1,0 +1,106 @@
+.scrollNav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  height: 56px;
+  background: rgba(10, 10, 10, 0.7);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.links {
+  display: flex;
+  gap: 2rem;
+}
+
+.links a {
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+  transition: color 0.2s;
+}
+
+.links a:hover {
+  color: var(--color-text);
+}
+
+.contactBtn {
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.4rem 1.2rem;
+  border: 1px solid var(--color-accent);
+  border-radius: 2px;
+  color: var(--color-accent);
+  transition: background 0.2s, color 0.2s;
+}
+
+.contactBtn:hover {
+  background: var(--color-accent);
+  color: #000;
+}
+
+.multipageNav {
+  position: fixed;
+  top: 1rem;
+  right: 1.5rem;
+  z-index: 100;
+}
+
+.bentoBtn {
+  font-size: 1.6rem;
+  width: 44px;
+  height: 44px;
+  background: rgba(10, 10, 10, 0.8);
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.drawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 260px;
+  z-index: 200;
+  background: var(--color-surface);
+  border-left: 1px solid var(--color-border);
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1.5rem;
+  gap: 1.5rem;
+}
+
+.closeBtn {
+  align-self: flex-end;
+  font-size: 1.2rem;
+  color: var(--color-muted);
+}
+
+.drawer a {
+  font-size: 1rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+  transition: color 0.2s;
+}
+
+.drawer a:hover {
+  color: var(--color-text);
+}
+
+@media (max-width: 640px) {
+  .links {
+    display: none;
+  }
+}

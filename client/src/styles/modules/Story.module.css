@@ -1,0 +1,52 @@
+.story {
+  min-height: 100vh;
+  padding: 6rem 2rem 4rem;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.tabs {
+  display: flex;
+  gap: 0;
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.tab,
+.activeTab {
+  padding: 0.6rem 1.5rem;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition: color 0.2s, border-color 0.2s;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+  color: var(--color-muted);
+  background: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  cursor: pointer;
+}
+
+.activeTab {
+  color: var(--color-text);
+  border-bottom-color: var(--color-accent);
+}
+
+.tab:hover {
+  color: var(--color-text);
+}
+
+.content h2 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+.content p {
+  color: var(--color-muted);
+  line-height: 1.8;
+}
